@@ -24,7 +24,7 @@ https://github.com/junnie082/hangman/assets/88719152/1d615066-bf47-450f-8d75-3e9
 - Uses `msgget` and `msgsnd` system call.  
 
 ```C
-#include <stdio.h> // sender.c 
+#include <stdio.h> 
 #include <sys/types.h> 
 #include <sys/ipc.h>
 #include <sys/msg.h>
@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 - Uses `msgget` system call. 
 
 ```C
-#include <stdio.h> // receiver.c #include <sys/types.h>
+#include <stdio.h> 
 #include <sys/ipc.h>
 #include <sys/msg.h>
 #include <stdlib.h>
