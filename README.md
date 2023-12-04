@@ -18,10 +18,10 @@ https://github.com/junnie082/hangman/assets/88719152/1d615066-bf47-450f-8d75-3e9
 
 ## Files 
 
-## sender.c
+### sender.c
 
 - The sender sends one specific word to the receiver.   
-- Uses `msgget` and `msgsnd` system call.  
+- Uses `msgget` and `msgsnd` system call and `gets` library.  
 
 ```C
 #include <stdio.h> 
@@ -31,6 +31,7 @@ https://github.com/junnie082/hangman/assets/88719152/1d615066-bf47-450f-8d75-3e9
 #include <stdlib.h>
 #include <string.h>
 #define DEFINED_KEY 0x10101010
+
 int main(int argc, char **argv)
 {
     int msg_qid;
@@ -60,10 +61,10 @@ int main(int argc, char **argv)
 
 
 
-## receiver.c
+### receiver.c
 
 - Once the receiver receives the word from the sender, the game starts.   
-- Uses `msgget` system call. 
+- Uses `msgget` and `msgrcv` system call. 
 
 ```C
 #include <stdio.h> 
@@ -72,6 +73,7 @@ int main(int argc, char **argv)
 #include <stdlib.h>
 #include <string.h>
 #define DEFINED_KEY 0x10101010
+
 int main(int argc, char **argv)
 {
     int msg_qid;
@@ -156,13 +158,13 @@ int main(int argc, char **argv)
 
 
 
-## hangman.c and answer.txt
+### hangman.c and answer.txt
 
 - You can also use hangman.c to play the game, reading the answers from the text file.   
 - Uses `fopen` library function.   
 
 
-### hangman.c
+#### hangman.c
 
 ```C
 #include <stdio.h>
@@ -251,7 +253,7 @@ int main() {
 }
 ```
 
-### answer.txt
+#### answer.txt
 
 beautiful  
 whale  
