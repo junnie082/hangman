@@ -2,6 +2,8 @@
 
 https://github.com/junnie082/hangman/assets/88719152/1d615066-bf47-450f-8d75-3e9ad74fa4b0
 
+* Presentation: https://docs.google.com/presentation/d/1nRBsFtkSS0PdYuIfni9KqZUkTmKnvFd8ba8aiNflY_0/edit?usp=sharing
+
 ## Rule
 
 #### Sender
